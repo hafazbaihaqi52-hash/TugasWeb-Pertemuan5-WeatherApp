@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e0f2fe;
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.weather-card {
+    width: 100%;
+    max-width: 450px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+}
+
+.weather-card h1 {
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+    color: #64748b;
+}
+
+#weatherForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    flex: 1;
+
+    padding: 12px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+#weatherForm button {
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #0284c7;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+#weatherForm button:hover {
+    background: #0369a1;
+}
+
+.hidden {
+    display: none;
+}
+
+.loading {
+    margin: 20px 0;
+    color: #0284c7;
+}
+
+.error {
+    margin: 20px 0;
+    color: #dc2626;
+}
+
+.weather-result {
+    margin-top: 25px;
+}
+
+.weather-result h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#weatherIcon {
+    width: 100px;
+    height: 100px;
+}
+
+.temperature {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.detail-item {
+    padding: 15px;
+
+    background: #f1f5f9;
+
+    border-radius: 10px;
+}
+
+.detail-item strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 500px) {
+
+    .weather-card {
+        padding: 20px;
+    }
+
+    #weatherForm {
+        flex-direction: column;
+    }
+
+    #weatherForm button {
+        width: 100%;
+    }
+
+    .temperature {
+        font-size: 40px;
+    }
+}

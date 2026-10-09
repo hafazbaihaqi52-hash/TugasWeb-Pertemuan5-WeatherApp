@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Weather App untuk melihat informasi cuaca berdasarkan kota.">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="weather-card">
+
+            <h1>🌤️ Weather App</h1>
+
+            <p class="subtitle">
+                Cari informasi cuaca berdasarkan kota
+            </p>
+
+            <form id="weatherForm">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Masukkan nama kota"
+                    required
+                >
+
+                <button type="submit">
+                    Cari
+                </button>
+
+            </form>
+
+            <p id="loading" class="loading hidden">
+                Memuat data cuaca...
+            </p>
+
+            <p id="errorMessage" class="error hidden"></p>
+
+            <section id="weatherResult" class="weather-result hidden">
+
+                <h2 id="cityName"></h2>
+
+                <img
+                    id="weatherIcon"
+                    src=""
+                    alt="Ikon cuaca"
+                >
+
+                <p id="temperature" class="temperature"></p>
+
+                <p id="description" class="description"></p>
+
+                <div id="weatherDetails" class="weather-details"></div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
